@@ -12,17 +12,24 @@ import {Weather} from "@/app/interfaces/weather";
 const WeatherContentWrapper = styled.main`
     width: 80vw;
     margin: auto;
-    background-color: aquamarine;
+    background-color: lightblue;
+    
 `;
 
 const CityName = styled.h1`
     color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem;
 `;
 
 const WeatherCardsContainer = styled.div`
     display: flex;
     flex-flow: row wrap;
-    border: gold 5px solid;
+    border: darkblue 5px solid;
 `;
 
 export default function CityPage() {

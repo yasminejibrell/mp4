@@ -11,6 +11,8 @@ const StyledDiv=styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem;
+  margin: 1rem;
 `;
 
 export default function Home() {
@@ -20,6 +22,7 @@ export default function Home() {
       <h1>Find the Weather in any city!</h1>
       <p>Enter a city name below to get the current weather</p>
       <input type="text" value={city} placeholder="City name" onChange={(e) => setCity(e.target.value)}/>
+      <br></br>
       <Link href={`/${city}`}>Get Weather</Link>
     </StyledDiv>
   );
